@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Exercises</title>
+  <style>
+    .blue {
+      background-color: DodgerBlue;
+      color: white;
+    }
+
+    .grey {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    .item {
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flexbox Exercises</h1>
+
+  <p>Thank you <a href="https://www.w3schools.com/css/css3_flexbox.asp">w3schools</a>.</p>
+  <h2>Flexbox Elements</h2>
+
+  <div class="blue flex-container">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h2>Container Properties</h2>
+
+  <p>The flex container properties are:</p>
+
+  <ul>
+    <li>flex-direction</li>
+    <li>flex-wrap</li>
+    <li>flex-flow</li>
+    <li>justify-content</li>
+    <li>align-items</li>
+    <li>align-content</li>
+  </ul>
+
+  <h3>flex-direction: row (default)</h3>
+
+  <div class="blue flex-container" style="flex-direction: row;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>flex-direction: column</h3>
+
+  <div class="blue flex-container" style="flex-direction: column;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>flex-direction: row-reverse</h3>
+
+  <div class="blue flex-container" style="flex-direction: row-reverse;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>flex-direction: column-reverse</h3>
+
+  <div class="blue flex-container" style="flex-direction: column-reverse;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>flex-wrap: nowrap (default)</h3>
+
+  <div class="blue flex-container" style="flex-wrap: nowrap; max-width: 800px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>flex-wrap: wrap</h3>
+
+  <div class="blue flex-container" style="flex-wrap: wrap; max-width: 800px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>flex-wrap: wrap-reverse</h3>
+
+  <div class="blue flex-container" style="flex-wrap: wrap-reverse; max-width: 800px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>flex-flow: column wrap</h3>
+
+  <div class="blue flex-container" style="flex-flow: column wrap; max-width: 800px; height: 320px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>flex-flex: row wrap-reverse</h3>
+
+  <div class="blue flex-container" style="flex-flow: row wrap-reverse; max-width: 800px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>justify-content: flex-start (default)</h3>
+
+  <div class="blue flex-container" style="justify-content: flex-start;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>justify-content: flex-end</h3>
+
+  <div class="blue flex-container" style="justify-content: flex-end;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>justify-content: center</h3>
+
+  <div class="blue flex-container" style="justify-content: center;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>justify-content: space-around</h3>
+
+  <div class="blue flex-container" style="justify-content: space-around">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>justify-content: space-between</h3>
+
+  <div class="blue flex-container" style="justify-content: space-between">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-items: stretch (default)</h3>
+
+  <div class="blue flex-container" style="align-items: stretch; height: 200px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-items: center</h3>
+
+  <div class="blue flex-container" style="align-items: center; height: 200px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-items: flex-start</h3>
+
+  <div class="blue flex-container" style="align-items: flex-start; height: 200px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-items: flex-end</h3>
+
+  <div class="blue flex-container" style="align-items: flex-end; height: 200px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-items: baseline</h3>
+
+  <div class="blue flex-container" style="align-items: baseline;">
+    <div class="grey item" style="font-size: 50%;">1</div>
+    <div class="grey item" style="font-size: 70%">2</div>
+    <div class="grey item">3</div>
+  </div>
+
+  <h3>align-content: stretch (default)</h3>
+
+  <div class="blue flex-container" style="align-content: stretch; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>align-content: space-around</h3>
+
+  <div class="blue flex-container"
+    style="align-content: space-around; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>align-content: space-between</h3>
+
+  <div class="blue flex-container"
+    style="align-content: space-between; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>align-content: flex-start</h3>
+
+  <div class="blue flex-container" style="align-content: flex-start; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>align-content: flex-end</h3>
+
+  <div class="blue flex-container" style="align-content: flex-end; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>align-content: center</h3>
+
+  <div class="blue flex-container" style="align-content: center; flex-wrap: wrap; max-width: 800px; height: 500px;">
+    <div class="grey item">1</div>
+    <div class="grey item">2</div>
+    <div class="grey item">3</div>
+    <div class="grey item">4</div>
+    <div class="grey item">5</div>
+    <div class="grey item">6</div>
+    <div class="grey item">7</div>
+    <div class="grey item">8</div>
+    <div class="grey item">9</div>
+    <div class="grey item">10</div>
+    <div class="grey item">11</div>
+    <div class="grey item">12</div>
+    <div class="grey item">13</div>
+    <div class="grey item">14</div>
+    <div class="grey item">15</div>
+    <div class="grey item">16</div>
+  </div>
+
+  <h3>justify-content: center; align-items: center;</h3>
+
+  <div class="blue flex-container"
+    style="justify-content: center; align-items: center; max-width: 800px; height: 300px;">
+    <div class="grey item">1</div>
+  </div>
+
+  <h2>Item Properties</h2>
+
+  <p>The flex item properties are:</p>
+
+  <ul>
+    <li>order</li>
+    <li>flex-grow</li>
+    <li>flex-shrink</li>
+    <li>flex-basis</li>
+    <li>flex</li>
+    <li>align-self</li>
+  </ul>
+
+  <h3>order 3,1,2</h3>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="order:3;">1</div>
+    <div class="blue item" style="order:1;">2</div>
+    <div class="blue item" style="order:2;">3</div>
+  </div>
+
+  <h3>flex-grow 1,2,3 (default: 0)</h3>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex-grow:1;">1</div>
+    <div class="blue item" style="flex-grow:2;">2</div>
+    <div class="blue item" style="flex-grow:3;">3</div>
+  </div>
+
+  <h3>flex-grow 0,1,1</h3>
+
+  <p>Item one will not grow.</p>
+
+  <div class="grey flex-container">
+    <div class="blue item">1</div>
+    <div class="blue item" style="flex-grow:1;">2</div>
+    <div class="blue item" style="flex-grow:1;">3</div>
+  </div>
+
+  <h3>flex-shrink 2,1,1 (default: 1)</h3>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex-shrink: 3; width: 200px;">1</div>
+    <div class="blue item" style="width: 200px;">2</div>
+    <div class="blue item" style="width: 200px;">3</div>
+  </div>
+
+  <h3>flex-shrink 0,1,2</h3>
+
+  <p>Item one will not shrink.</p>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex-shrink: 0; width: 200px;">1</div>
+    <div class="blue item" style="width: 200px;">2</div>
+    <div class="blue item" style="flex-shrink: 2; width: 200px;">3</div>
+  </div>
+
+  <h3>flex-shrink 0,0,0</h3>
+
+  <p>Item one, two and three will not shrink.</p>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex-shrink: 0; width: 200px;">1</div>
+    <div class="blue item" style="flex-shrink: 0; width: 200px;">2</div>
+    <div class="blue item" style="flex-shrink: 0; width: 200px;">3</div>
+  </div>
+
+  <h3>flex-basis</h3>
+
+  <p>This is like width but applies to the main axis.</p>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex-basis: 200px">1</div>
+    <div class="blue item" style="flex-basis: 100px">2</div>
+    <div class="blue item" style="flex-basis: 100px">3</div>
+    <div class="blue item" style="flex-basis: 100px">4</div>
+    <div class="blue item" style="flex-basis: 100px">5</div>
+  </div>
+
+  <h3>flex-basis (flex-direction: column)</h3>
+
+  <div class="grey flex-container" style="flex-direction: column;">
+    <div class="blue item" style="flex-basis: 200px">1</div>
+    <div class="blue item" style="flex-basis: 100px">2</div>
+    <div class="blue item" style="flex-basis: 100px">3</div>
+    <div class="blue item" style="flex-basis: 100px">4</div>
+    <div class="blue item" style="flex-basis: 100px">5</div>
+  </div>
+
+  <h3>flex 0 1 200px, 0 0 200px, 1 0 200px</h3>
+
+  <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="flex: 0 1 200px">1</div>
+    <div class="blue item" style="flex: 0 0 200px">2</div>
+    <div class="blue item" style="flex: 1 0 200px">3</div>
+  </div>
+
+  <h3>align-self</h3>
+
+  <p>The align-self property overrides the default alignment set by the container's align-items property.</p>
+
+  <div class="grey flex-container" style="height: 200px;">
+    <div class="blue item">1</div>
+    <div class="blue item" style="align-self: center">2</div>
+    <div class="blue item">3</div>
+  </div>
+
+  <!--
+  <h3></h3>
+
+  <div class="grey flex-container">
+    <div class="blue item" style="">1</div>
+    <div class="blue item" style="">2</div>
+    <div class="blue item" style="">3</div>
+  </div>
+-->
+
+</body>
+
+</html>
